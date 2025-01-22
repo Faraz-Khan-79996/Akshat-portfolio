@@ -1,13 +1,15 @@
 //homepage type animation
 export const typeAnimationContent = [
-    "Faraz Khan",
+    "Akshat Nahata",
     1000,
-    "Web Developer",
+    "3D Artist",
     1000,
-    "Software engineer",
+    "Video Editor",
+    1000,
+    "Voice Over Artist",
     1000,
 ]
 
-export const intro = "Btech '26 | information technology | Pre-final year | Full Stack Developer | competitive programmer |"
-export const summary = "I'm Faraz Khan, a Full Stack Developer and DSA enthusiast. Currently interning at Ionots, I've previously contributed to impactful projects at Anajwala. I'm passionate about building scalable solutions and solving complex problems."
+export const intro = "Bsc '25  | Final year | 3D Artiest | Voice Over Artist | Video Editor"
+export const summary = "Bsc '25  | Final year | 3D Artiest | Voice Over Artist | Video Editor"
 export const cvLink = "https://drive.google.com/drive/folders/12woZUWD96m_xGVyzhDTZx3vmZHRgzQsO?usp=drive_link"
