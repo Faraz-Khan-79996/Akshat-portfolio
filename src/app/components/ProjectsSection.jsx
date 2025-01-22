@@ -12,12 +12,12 @@ import { motion } from "framer-motion";
 // ]; // Replace with your video URLs.
 
 const videoUrls = [
-  "videos/test.mp4",
-  "videos/test.mp4",
-  "videos/test.mp4",
-  "videos/test.mp4",
-  "videos/test.mp4",
-  "videos/test.mp4",
+  "videos/vid1.mov",
+  "videos/vid1.mov",
+  "videos/vid1.mov",
+  "videos/vid1.mov",
+  "videos/vid1.mov",
+  "videos/vid1.mov",
 ]; // Replace with your video URLs.
 
 
