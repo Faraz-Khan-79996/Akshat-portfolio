@@ -15,12 +15,12 @@ const HeroSection = ({cvLink , intro , summary , typeAnimationContent}) => {
           transition={{ duration: 0.5 }}
           className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
         >
-          <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
+          <h1 className="text-white ml-3 md:ml-0 text-start mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
           <span className="text-transparent bg-clip-text gradient-text">
   Hello, I&apos;m{" "}
 </span>
             <br></br>
-            <div className="flex h-20 md:h-auto">
+            <div className="flex text-3xl md:text-8xl h-20 md:h-auto">
             <TypeAnimation
               sequence={typeAnimationContent}
               wrapper="span"

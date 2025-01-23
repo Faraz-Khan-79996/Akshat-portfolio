@@ -11,17 +11,8 @@ import { motion } from "framer-motion";
 //   "https://res.cloudinary.com/dqasiuje0/video/upload/v1737562162/akshat_videos/vid1_svhrhm.mp4",  
 // ]; // Replace with your video URLs.
 
-const videoUrls = [
-  "videos/vid1.webm",
-  "videos/vid1.webm",
-  "videos/vid1.webm",
-  "videos/vid1.webm",
-  "videos/vid1.webm",
-  "videos/vid1.webm",
-]; // Replace with your video URLs.
 
-
-export default function ProjectSection() {
+export default function ProjectSection({videoUrls}) {
   const [controls, setControls] = useState(
     Array(videoUrls.length).fill({ isMuted: true, isPaused: false })
   );
