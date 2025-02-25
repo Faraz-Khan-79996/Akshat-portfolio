@@ -44,16 +44,16 @@ export default function ProjectSection({videoUrls}) {
   };
 
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3  gap-3 md:gap-20 md:p-4">
+    <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3  gap-3 md:gap-20 md:p-4 min-h-screen">
       {videoUrls.map((videoUrl, index) => (
         <motion.div
           key={index}
-          className="relative w-full h-auto overflow-hidden border border-gray-300 rounded-lg"
+          className="relative w-full overflow-hidden"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: index * 0.2, duration: 0.5 }}
         >
-          <div className="relative w-full h-auto">
+          <div className="relative w-full">
             <video
               ref={(el) => (videoRefs.current[index] = el)}
               src={videoUrl}
@@ -62,7 +62,7 @@ export default function ProjectSection({videoUrls}) {
               muted
               playsInline
               // preload="auto"
-              className="w-full h-auto object-contain"
+              className="w-full object-contain border border-gray-300 rounded-lg"
             ></video>
             <div className="absolute bottom-2 left-2 flex space-x-2">
               <button
