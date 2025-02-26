@@ -14,7 +14,7 @@ function projects_video_editing() {
           name: "Style-2",
         },
         {
-          url: "videos/video-editing/vid3.mp4",
+          url: "videos/video-editing/vid3.webm",
           name: "Paper Graphic Animation",
         },                
     ]; // Replace with your video URLs.
