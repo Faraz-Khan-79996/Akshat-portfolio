@@ -14,20 +14,20 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-      <Navbar />
-      <main className="flex min-h-screen flex-col bg-[#121212]">
-      <div className="container mt-24 mx-auto px-12 py-4">
-         <ThemeProvider
-            attribute="class"
-            defaultTheme="dark"
-            enableSystem
-            disableTransitionOnChange
-          > 
-            {children}
-          </ThemeProvider>
-      </div>
-      <Footer />
-    </main>
+        <Navbar />
+        <main className="min-h-screen bg-[#121212]">
+          <div className="container mx-auto px-12 py-4">
+            <ThemeProvider
+              attribute="class"
+              defaultTheme="dark"
+              enableSystem
+              disableTransitionOnChange
+            >
+              {children}
+            </ThemeProvider>
+          </div>
+          <Footer />
+        </main>
       </body>
     </html>
   )

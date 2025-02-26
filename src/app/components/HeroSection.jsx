@@ -7,7 +7,16 @@ import Link from "next/link";
 import ContactLinks from "./ContactLinks";
 const HeroSection = ({cvLink , intro , summary , typeAnimationContent}) => {
   return (
-    <section className="lg:py-16 my-16">
+    <section className="lg:py-16 my-16 mt-8 lg:my-16">
+            <div className="rounded-full mx-auto mb-10 block lg:hidden bg-[#181818] mt-12 lg:mt-0 w-[250px] h-[250px] lg:w-[400px] lg:h-[600px] relative overflow-hidden">
+            <img
+              src="/images/profile-mobile.jpeg"
+              alt="hero image"
+              className="block lg:hidden absolute rounded-full transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-left-bottom"
+              // width={300}
+              // height={300}
+            />            
+          </div>
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -57,21 +66,14 @@ const HeroSection = ({cvLink , intro , summary , typeAnimationContent}) => {
           transition={{ duration: 0.5 }}
           className="col-span-4 place-self-center mt-4 lg:mt-0"
         >
-          <div className="rounded-full bg-[#181818] mt-12 lg:mt-0 w-[250px] h-[250px] lg:w-[400px] lg:h-[600px] relative overflow-hidden">
+          <div className="hidden lg:block rounded-full bg-[#181818] mt-12 lg:mt-0 w-[250px] h-[250px] lg:w-[400px] lg:h-[600px] relative overflow-hidden">
             <img
               src="/images/profile.jpeg"
               alt="hero image"
-              className="hidden lg:block absolute rounded-full transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 scale-125 object-left-bottom"
+              className="absolute rounded-full transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 scale-125 object-left-bottom"
               // width={300}
               // height={300}
-            />
-            <img
-              src="/images/profile-mobile.jpeg"
-              alt="hero image"
-              className="block lg:hidden absolute rounded-full transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-left-bottom"
-              // width={300}
-              // height={300}
-            />            
+            />     
           </div>
         </motion.div>
       </div>
