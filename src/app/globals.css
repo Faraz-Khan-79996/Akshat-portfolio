@@ -12,10 +12,10 @@
     /* @apply bg-gradient-to-r from-sky-500 to-purple-400; */
   }  
   .gradient-bg {
-    @apply bg-gradient-to-r from-violet-400 to-pink-600;
+    @apply bg-gradient-to-r from-blue-500 to-fuchsia-500;
   }
   .gradient-border {
-    @apply bg-gradient-to-br from-violet-400 to-pink-600;
+    @apply bg-gradient-to-br from-blue-500 to-fuchsia-500;
   }
 }
 /* @layer utilities {
