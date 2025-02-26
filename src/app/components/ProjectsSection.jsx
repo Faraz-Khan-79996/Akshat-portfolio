@@ -79,6 +79,7 @@ export default function ProjectSection({videoUrls}) {
               </button>
             </div>
           </div>
+          <div className="text-center mt-5 text-xl lg:text-2xl">Style-{index+1}</div>
         </motion.div>
       ))}
     </div>

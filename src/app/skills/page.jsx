@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function ToolsAndTechnologies() {
     return (
         <div className="py-10">
-            <Stats />
+            {/* <Stats /> */}
             <div className="max-w-6xl mx-auto px-4">
                 {/* Header */}
                 <motion.h1

@@ -6,7 +6,7 @@ export default function ContactLinks() {
     <div className="flex justify-center gap-3 lg:gap-6">
       {/* LinkedIn */}
       <a
-        href="https://www.linkedin.com/in/faraz-khan-b2a42028a/"
+        // href="https://www.linkedin.com/in/faraz-khan-b2a42028a/"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="LinkedIn"
@@ -21,7 +21,7 @@ export default function ContactLinks() {
       </a>
 
       {/* GitHub */}
-      <a
+      {/* <a
         href="https://github.com/Faraz-Khan-79996"
         target="_blank"
         rel="noopener noreferrer"
@@ -34,11 +34,11 @@ export default function ContactLinks() {
           height={50}
           className="rounded-full hover:scale-105 transition-transform"
         />
-      </a>
+      </a> */}
 
       {/* Google (Mail) */}
       <a
-        href="mailto:farazkhan799962@gmail.com"
+        href="mailto:akshat.nahata0731@gmail.com"
         aria-label="Google Mail"
       >
         <Image

@@ -10,6 +10,6 @@ export const typeAnimationContent = [
     1000,
 ]
 
-export const intro = "Bsc '25  | Final year | 3D Artist | Voice Over Artist | Video Editor"
-export const summary = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi possimus ducimus laborum, beatae velit exercitationem recusandae a praesentium cum aliquam, nobis expedita ipsum iure dolores labore libero itaque architecto ad!"
-export const cvLink = "https://drive.google.com/drive/folders/12woZUWD96m_xGVyzhDTZx3vmZHRgzQsO?usp=drive_link"
+export const intro = "Bsc '25  | Final year | 3D Artist | Video Editor | Voice Over Artist"
+export const summary = "A passionate 3D artist and video editor with a knack for turning ideas into stunning visual experiences. From crafting immersive 3D animations to editing captivating videos, I bring stories to life through creativity and precision. Whether it’s product visualizations, motion graphics, or dynamic video edits, I thrive on delivering high-quality work that leaves a lasting impression. Let’s create something extraordinary together!"
+export const cvLink = "https://drive.google.com/drive/folders/13EEuHvCuhNJlBY9RlrNI-iZHX1KUFBQF"

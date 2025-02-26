@@ -6,7 +6,7 @@ import ProjectSection from '../components/ProjectsSection'
 function projects_3D() {
 
   const videoUrls = [
-    // "videos/vid1.webm",
+    "videos/3d/vid1.webm",
     // "videos/vid1.webm",
     // "videos/vid1.webm",
     // "videos/vid1.webm",

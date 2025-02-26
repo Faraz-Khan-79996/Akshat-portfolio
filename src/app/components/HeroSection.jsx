@@ -57,14 +57,21 @@ const HeroSection = ({cvLink , intro , summary , typeAnimationContent}) => {
           transition={{ duration: 0.5 }}
           className="col-span-4 place-self-center mt-4 lg:mt-0"
         >
-          <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
-            <Image
-              src="/images/hero-image.png"
+          <div className="rounded-full bg-[#181818] mt-12 lg:mt-0 w-[250px] h-[250px] lg:w-[400px] lg:h-[600px] relative overflow-hidden">
+            <img
+              src="/images/profile.jpeg"
               alt="hero image"
-              className="absolute rounded-full transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              width={300}
-              height={300}
+              className="hidden lg:block absolute rounded-full transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 scale-125 object-left-bottom"
+              // width={300}
+              // height={300}
             />
+            <img
+              src="/images/profile-mobile.jpeg"
+              alt="hero image"
+              className="block lg:hidden absolute rounded-full transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-left-bottom"
+              // width={300}
+              // height={300}
+            />            
           </div>
         </motion.div>
       </div>

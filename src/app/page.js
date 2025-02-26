@@ -3,7 +3,7 @@ import { intro , typeAnimationContent , cvLink , summary } from "./_content/home
 export default function Home() {
   return (
     <>
-           <HeroSection 
+      <HeroSection 
         intro={intro} 
         typeAnimationContent={typeAnimationContent} 
         cvLink={cvLink} 

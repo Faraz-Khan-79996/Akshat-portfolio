@@ -43,7 +43,11 @@ module.exports = {
   		Varela: [
   			'Varela Round',
   			'serif'
-  		]
+  		],
+		Poppins:[
+			'Poppins',
+			'serif'
+		]
   	}
   },
   plugins: [require("tailwindcss-animate")],
