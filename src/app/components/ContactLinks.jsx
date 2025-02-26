@@ -20,21 +20,21 @@ export default function ContactLinks() {
         />
       </a>
 
-      {/* GitHub */}
-      {/* <a
-        href="https://github.com/Faraz-Khan-79996"
+      {/* Insta */}
+      <a
+        href="https://www.instagram.com/xclayvia?igsh=MWRwajV2dHRkOGx4Mw=="
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="GitHub"
+        aria-label="Instagram"
       >
         <Image
-          src="/companies/github.svg" // Replace with your GitHub icon path
-          alt="GitHub"
+          src="/companies/insta.svg" // Replace with your GitHub icon path
+          alt="Instagram"
           width={50}
           height={50}
-          className="rounded-full hover:scale-105 transition-transform"
+          className="hover:scale-105 transition-transform"
         />
-      </a> */}
+      </a>
 
       {/* Google (Mail) */}
       <a

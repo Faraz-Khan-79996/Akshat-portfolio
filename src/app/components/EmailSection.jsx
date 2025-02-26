@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
+import InstaIcon from "../../../public/companies/insta.svg"
 import Link from "next/link";
 import Image from "next/image";
 
@@ -61,21 +62,21 @@ const EmailSection = () => {
                     get back to you!
                 </p>
                 <div className="socials flex flex-row gap-2">
-                    {/* <a
-                        href="https://github.com/Faraz-Khan-79996"
+                    <a
+                        href="https://www.instagram.com/xclayvia?igsh=MWRwajV2dHRkOGx4Mw=="
                         target="_blank"
                         rel="noopener noreferrer"
-                        aria-label="GitHub"
+                        aria-label="Instagram"
                     >
-                        <Image src={GithubIcon} alt="Github Icon" />
-                    </a> */}
+                        <Image width={40} height={40} src={InstaIcon} alt="Instagram Icon" />
+                    </a>
                     <a
                         // href="https://www.linkedin.com/in/faraz-khan-b2a42028a/"
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="LinkedIn"
                     >
-                        <Image src={LinkedinIcon} alt="Linkedin Icon" />
+                        <Image width={40} height={40} src={LinkedinIcon} alt="Linkedin Icon" />
                     </a>
                 </div>
             </div>

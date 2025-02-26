@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function ToolsAndTechnologies() {
     return (
-        <div className="py-10">
+        <div className="py-10 mb-60">
             {/* <Stats /> */}
             <div className="max-w-6xl mx-auto px-4">
                 {/* Header */}
