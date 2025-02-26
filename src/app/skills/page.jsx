@@ -56,7 +56,7 @@ export default function ToolsAndTechnologies() {
                                 height={30}
                                 width={30}
                             />
-                            <p className="text-sm font-medium text-gray-200">{tech.name}</p>
+                            <p className="text-[13px] text-center leading-4 lg:text-sm font-medium text-gray-200 ">{tech.name}</p>
                         </motion.div>
                     ))}
                 </motion.div>
