@@ -5,17 +5,15 @@ import ProjectSection from '../components/ProjectsSection'
 
 function projects_video_editing() {
 
-  const videoUrls = [
-    "videos/video-editing/vid1.webm",
-    // "videos/video-editing/vid2.webm",
-    // "videos/video-editing/vid1.webm",
-    // "videos/video-editing/vid2.webm",
-    // "videos/video-editing/vid2.webm",
-    // "videos/video-editing/vid2.webm",
+  const videos = [
+    {
+      url : "videos/video-editing/vid1.webm",
+      name : "Style-1"
+    }
   ] // Replace with your video URLs.  
 
   return (
-    <ProjectSection videoUrls={videoUrls} />
+    <ProjectSection videos={videos} />
   )
 }
 

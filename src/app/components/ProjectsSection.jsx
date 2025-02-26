@@ -2,19 +2,10 @@
 import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 
-// const videoUrls = [
-//   "https://res.cloudinary.com/dqasiuje0/video/upload/v1737562162/akshat_videos/vid1_svhrhm.mp4",
-//   "https://res.cloudinary.com/dqasiuje0/video/upload/v1737562162/akshat_videos/vid1_svhrhm.mp4",
-//   "https://res.cloudinary.com/dqasiuje0/video/upload/v1737562162/akshat_videos/vid1_svhrhm.mp4",
-//   "https://res.cloudinary.com/dqasiuje0/video/upload/v1737562162/akshat_videos/vid1_svhrhm.mp4",
-//   "https://res.cloudinary.com/dqasiuje0/video/upload/v1737562162/akshat_videos/vid1_svhrhm.mp4",
-//   "https://res.cloudinary.com/dqasiuje0/video/upload/v1737562162/akshat_videos/vid1_svhrhm.mp4",  
-// ]; // Replace with your video URLs.
 
-
-export default function ProjectSection({videoUrls}) {
+export default function ProjectSection({videos}) {
   const [controls, setControls] = useState(
-    Array(videoUrls.length).fill({ isMuted: true, isPaused: false })
+    Array(videos.length).fill({ isMuted: true, isPaused: false })
   );
 
   const videoRefs = useRef([]);
@@ -45,7 +36,7 @@ export default function ProjectSection({videoUrls}) {
 
   return (
     <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3  gap-3 md:gap-20 md:p-4 min-h-screen">
-      {videoUrls.map((videoUrl, index) => (
+      {videos.map((video, index) => (
         <motion.div
           key={index}
           className="relative w-full overflow-hidden"
@@ -56,7 +47,7 @@ export default function ProjectSection({videoUrls}) {
           <div className="relative w-full">
             <video
               ref={(el) => (videoRefs.current[index] = el)}
-              src={videoUrl}
+              src={video.url}
               autoPlay
               loop
               muted
@@ -79,7 +70,7 @@ export default function ProjectSection({videoUrls}) {
               </button>
             </div>
           </div>
-          <div className="text-center mt-5 text-xl lg:text-2xl">Style-{index+1}</div>
+          <div className="text-center mt-5 text-sm lg:text-2xl lg:mt-8">{video.name}</div>
         </motion.div>
       ))}
     </div>
