@@ -20,12 +20,13 @@ export default function ProjectsPage() {
     <div className="flex flex-wrap items-center justify-center gap-6 min-h-screen p-1">
       {projects.map((project, index) => (
         <motion.div
-          key={project.title}
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: index * 0.1 }}
-          className="rounded-lg overflow-hidden shadow-lg transition-shadow duration-300 hover:shadow-xl hover:shadow-blue-500/50"
-        >
+  key={project.title}
+  initial={{ opacity: 0, y: 60 }} // Increased initial y-offset for a more noticeable rise
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.15, ease: "easeOut", delay: index * 0.05 }} // Faster duration, shorter delay
+  className="rounded-lg overflow-hidden shadow-lg transition-shadow duration-300 hover:shadow-xl hover:shadow-blue-500/50"
+>
+
           <Link href={project.href}>
             <span className="relative group block w-full max-w-lg sm:w-[600px] h-[400px] rounded-lg overflow-hidden shadow-lg">
               {/* Image */}
@@ -33,9 +34,9 @@ export default function ProjectsPage() {
                 src={project.image}
                 alt={project.title}
                 className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                initial={{ scale: 0.9 }}
+                initial={{ scale: 0.90 }}
                 animate={{ scale: 1 }}
-                transition={{ duration: 0.5 }}
+                transition={{ duration: 0.25 }}
               />
               {/* Overlay */}
               <div className="absolute inset-0 bg-black bg-opacity-30 transition-opacity duration-300 group-hover:bg-opacity-60" />

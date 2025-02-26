@@ -9,6 +9,10 @@ function projects_video_editing() {
             url: "videos/video-editing/vid1.webm",
             name: "Style-1",
         },
+        {
+          url: "videos/video-editing/vid2.webm",
+          name: "Style-2",
+      },        
     ]; // Replace with your video URLs.
 
     return (
