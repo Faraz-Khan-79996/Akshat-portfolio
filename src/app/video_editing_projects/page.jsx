@@ -7,15 +7,19 @@ function projects_video_editing() {
     const videos = [
         {
             url: "videos/video-editing/vid1.webm",
-            name: "Style-1",
+            name: "Reel Edit - Style 1",
         },
         {
           url: "videos/video-editing/vid2.webm",
-          name: "Style-2",
+          name: "Reel Edit - Style 2",
         },
         {
           url: "videos/video-editing/vid3.webm",
           name: "Paper Graphic Animation",
+        }, 
+        {
+          url: "videos/video-editing/vid4.webm",
+          name: "PP - Logo Animation",
         },                
     ]; // Replace with your video URLs.
 

@@ -35,11 +35,11 @@ export default function ProjectSection({videos}) {
   };
 
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3  gap-3 md:gap-20 md:p-4 min-h-screen">
+    <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-3 md:gap-20 md:p-4 min-h-screen">
       {videos.map((video, index) => (
         <motion.div
           key={index}
-          className="relative w-full overflow-hidden"
+          className="relative w-full"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: index * 0.2, duration: 0.5 }}
@@ -70,7 +70,7 @@ export default function ProjectSection({videos}) {
               </button>
             </div>
           </div>
-          <div className="text-center mt-5 text-sm lg:text-2xl lg:mt-8">{video.name}</div>
+          <div className="text-center mt-5 mb-0 pb-0 text-sm lg:text-2xl lg:mt-8">{video.name}</div>
         </motion.div>
       ))}
     </div>
