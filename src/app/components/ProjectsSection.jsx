@@ -44,7 +44,7 @@ export default function ProjectSection({videos}) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: index * 0.2, duration: 0.5 }}
         >
-          <div className="relative w-full">
+          <div className="relative w-full border">
             <video
               ref={(el) => (videoRefs.current[index] = el)}
               src={video.url}

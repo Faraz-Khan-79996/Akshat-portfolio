@@ -12,7 +12,11 @@ function projects_video_editing() {
         {
           url: "videos/video-editing/vid2.webm",
           name: "Style-2",
-      },        
+        },
+        {
+          url: "videos/video-editing/vid3.mp4",
+          name: "Paper Graphic Animation",
+        },                
     ]; // Replace with your video URLs.
 
     return (
