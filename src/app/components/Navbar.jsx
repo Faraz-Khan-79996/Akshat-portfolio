@@ -45,7 +45,7 @@ const Navbar = () => {
                     href={"/"}
                     className="text-2xl pt-4 font-Poppins md:text-4xl text-white font-medium"
                 >
-                    {"< Akshat Nahata />"}
+                    {"< Akshat Nahata >"}
                 </Link>
                 <div className="mobile-menu block md:hidden">
                     {/* {!navbarOpen ? (
